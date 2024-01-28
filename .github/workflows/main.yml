@@ -15,6 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Disable Flutter Analytics
+      run: flutter config --no-analytics
+
     - name: Install dependencies
       run: flutter pub get
 
